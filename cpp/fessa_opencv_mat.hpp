@@ -43,4 +43,4 @@ namespace fessa
     };
 }
 
-#endif // FESSA_SCALAR
+#endif // FESSA_OPENCV_MAT

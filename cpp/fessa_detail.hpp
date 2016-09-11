@@ -1,7 +1,7 @@
 // Fair Exponential Smoothing with Small Alpha by Juha Reunanen, 2015
 
 #ifndef FESSA_ALPHA
-#define FESSA_APLHA
+#define FESSA_ALPHA
 
 #include <limits>
 #include <assert.h>
