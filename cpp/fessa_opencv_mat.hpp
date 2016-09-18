@@ -24,11 +24,13 @@ namespace fessa
             if (s.type() != type) {
                 // the first call
                 s.create(x.getMat().size(), type);
+                s.setTo(0);
             }
             else if (s.size() != x.size()) {
                 // start over
                 nextAlpha = detail::Alpha<A, T>(baseAlpha);
                 s.create(x.getMat().size(), type);
+                s.setTo(0);
             }
             const A a = nextAlpha.getAlpha();
             cv::addWeighted(x, a, s, 1 - a, 0, s, type);
