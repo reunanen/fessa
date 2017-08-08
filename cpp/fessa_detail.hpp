@@ -27,7 +27,7 @@ namespace fessa
             }
 
             Alpha getNext() const {
-                if (t < std::numeric_limits<A>::max()) {
+                if (t < std::numeric_limits<T>::max()) {
                     return Alpha(baseAlpha, t + 1, a * (1 - baseAlpha), d + a);
                 }
                 else {
